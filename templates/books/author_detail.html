@@ -21,7 +21,7 @@
         <hr>
         {% endfor %}
     <p>
-        <a href="" role="button" class="btn btn-primary w-100 mb-2">Edit Authors Books</a>
+        <a href="{% url 'books:author_book_edit' author.pk %}" role="button" class="btn btn-primary w-100 mb-2">Edit Authors Books</a>
         <a href="{% url 'books:list_authors' %}" role="button" class="btn btn-secondary w-100">All Collection</a>
     </p>
 
